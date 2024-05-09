@@ -1,5 +1,16 @@
 h1{
-    background-color: aqua;
+    background: linear-gradient(to left, white, rgb(109, 109, 230));
+}
+h2{
+    background-color: rgb(198, 198, 198);
+}
+div#zentai {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 200px 200px;
+	grid-gap: 10px;
+	width: 1200px;
+	padding: 5px; 
 }
 p {
     
