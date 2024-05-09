@@ -12,6 +12,8 @@ h1 {
 }
 
 h2 {
+	color: #3f3faf;
+	background: linear-gradient(white, #ffefaf);
 	border: solid 1px black;
 	margin: 5px;
 }
