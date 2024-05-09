@@ -4,6 +4,7 @@ p {
 
 p.info {
 	font-size: small;
+	background-color: #dfdfdf
 }
 
 h1 {
@@ -16,9 +17,12 @@ h2 {
 }
 
 div#zentai {
-	display: flex;
-	flex-direction: row;
-	width: 1024px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 100px 100px;
+	grid-gap: 10px
+	width: 300px;
+	padding: 5px;
 }
 
 div#zentai > div {
