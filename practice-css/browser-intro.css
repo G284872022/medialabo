@@ -25,6 +25,10 @@ div.zentai {
 	padding: 5px;
 }
 
+img.sign{
+	float: right;
+}
+
 div#zentai > div {
 	margin-left: 5px;
 	background-color: #ffefaf;
