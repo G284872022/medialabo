@@ -12,6 +12,10 @@ div#zentai {
 	width: 1200px;
 	padding: 5px; 
 }
+div#zentai > div {
+	margin-left: 5px;
+	background-color: #ffefaf;
+}
 p {
     
 }
