@@ -19,6 +19,6 @@ console.log(campus.address);
 for(let element of campus.buildingD) {
 	console.log(element);
 }
-for(let {key, value} of gakka) {
-	console.log(value);
+for(let {name, ename} of gakka) {
+	console.log(name);
 }
