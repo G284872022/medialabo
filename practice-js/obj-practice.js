@@ -15,4 +15,9 @@ let gakka = [
 ];
 
 //////////////// ここから下にプログラムを書きたそう!
-
+for(const element of campus) {
+	console.log(element);
+}
+for(const element of gakka) {
+	console.log(element);
+}
