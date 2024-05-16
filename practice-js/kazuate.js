@@ -15,6 +15,7 @@ hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
+    kaisu += 1;
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   let yoso = 4;
   // 課題3-1: 正解判定する
@@ -23,21 +24,16 @@ function hantei() {
   if(kaisu < 3){
     if (kotae = yoso){
         result = "正解です。おめでとう！";
-        kaisu += 1;
       } else if (kotae > yoso){
         result = "まちがい。答えはもっと大きいですよ";
-        kaisu += 1;
       } else {
         result = "まちがい。答えはもっと小さいですよ";
-        kaisu += 1;
       }
   } else if(kaisu = 3){
     if(kotae = yoso){
-        result = "正解です。おめでとう！";
-        kaisu += 1;
+        result = "正解です。おめでとう！!";
     } else {
         result = "まちがい。残念でした答えは" + kotae + "です。";
-        kaisu += 1;
     }
   } else {
     result = "答えは" + kotae + "でした。すでにゲームは終わっています";
