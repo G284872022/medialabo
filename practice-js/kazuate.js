@@ -38,8 +38,9 @@ function hantei() {
         result = "まちがい。残念でした答えは" + kotae + "です。";
     }
   } else {
-    result = "答えは" + kotae + "でした。すでにゲームは終わっています"
+    result = "答えは" + kotae + "でした。すでにゲームは終わっています";
   }
+  console.log(kaisu + "回目の予想: " + yoso);
   console.log(result);
   // 課題3-1における出力先はコンソール
 }
