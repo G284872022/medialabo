@@ -22,7 +22,7 @@ function hantei() {
   // kotae と yoso が一致するかどうか調べて結果を出力
   let result;
   if(kaisu < 3){
-    if (kotae = yoso){
+    if (kotae == yoso){
         result = "正解です。おめでとう！";
         kaisu += 3;
       } else if (kotae > yoso){
@@ -30,8 +30,8 @@ function hantei() {
       } else {
         result = "まちがい。答えはもっと小さいですよ";
     }
-  } else if(kaisu = 3){
-    if(kotae = yoso){
+  } else if(kaisu == 3){
+    if(kotae == yoso){
         result = "正解です。おめでとう！!";
     } else {
         result = "まちがい。残念でした答えは" + kotae + "です。";
