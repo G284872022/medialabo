@@ -16,9 +16,9 @@ let gakka = [
 
 //////////////// ここから下にプログラムを書きたそう!
 console.log(campus.address);
-for(const element of campus.buildingD) {
+for(let element of campus.buildingD) {
 	console.log(element);
 }
-for(const [key, value] of gakka) {
+for(let {key, value} of gakka) {
 	console.log(value);
 }
