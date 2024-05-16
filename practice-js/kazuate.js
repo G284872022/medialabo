@@ -24,11 +24,12 @@ function hantei() {
   if(kaisu < 3){
     if (kotae = yoso){
         result = "正解です。おめでとう！";
+        kaisu += 3;
       } else if (kotae > yoso){
         result = "まちがい。答えはもっと大きいですよ";
       } else {
         result = "まちがい。答えはもっと小さいですよ";
-      }
+    }
   } else if(kaisu = 3){
     if(kotae = yoso){
         result = "正解です。おめでとう！!";
