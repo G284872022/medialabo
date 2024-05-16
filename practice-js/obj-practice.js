@@ -19,6 +19,6 @@ console.log(campus.address);
 for(const element of campus.buildingD) {
 	console.log(element);
 }
-for(const element of gakka{0}) {
-	console.log(element);
+for(const [element, elements] of gakka) {
+	console.log(elements);
 }
