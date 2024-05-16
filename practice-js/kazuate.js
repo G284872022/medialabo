@@ -23,7 +23,7 @@ function hantei() {
   if(kaisu < 3){
     if (kotae = yoso){
         result = "正解です。おめでとう！";
-        kaisu += 4;
+        kaisu += 1;
       } else if (kotae > yoso){
         result = "まちがい。答えはもっと大きいですよ";
         kaisu += 1;
@@ -34,8 +34,10 @@ function hantei() {
   } else if(kaisu = 3){
     if(kotae = yoso){
         result = "正解です。おめでとう！";
+        kaisu += 1;
     } else {
         result = "まちがい。残念でした答えは" + kotae + "です。";
+        kaisu += 1;
     }
   } else {
     result = "答えは" + kotae + "でした。すでにゲームは終わっています";
