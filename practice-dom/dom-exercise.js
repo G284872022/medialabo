@@ -37,10 +37,11 @@ photo3.setAttribute('src','hanako.png')
 let p4 = document.createElement('p');
 p4.insertAdjacentElement('beforeend',photo3);
 div.insertAdjacentElement('beforeend',p4);
-// 練習4-4 箇条書き削除プログラム
-let li = document.querySelectorAll('ul#location > li');
+// 練s習4-4 箇条書き削除プログラム
+let li = document.querySelectorAll('ul#location');
 for (let element of li) {
-li.remove();
+	let lip = document.querySelectorAll('li');
+    lip.remove();
 }
 
 
