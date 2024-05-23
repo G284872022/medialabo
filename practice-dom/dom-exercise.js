@@ -28,12 +28,12 @@ let p2 = document.createElement('p');
 p2.insertAdjacentElement('beforeend',photo);
 div.insertAdjacentElement('beforeend',p2);
 let photo2 = document.createElement('img');
-photo.setAttribute('src','jiro.png')
+photo2.setAttribute('src','jiro.png')
 let p3 = document.createElement('p');
 p3.insertAdjacentElement('beforeend',photo2);
 div.insertAdjacentElement('beforeend',p3);
 let photo3 = document.createElement('img');
-photo.setAttribute('src','hanako.png')
+photo3.setAttribute('src','hanako.png')
 let p4 = document.createElement('p');
 p4.insertAdjacentElement('beforeend',photo3);
 div.insertAdjacentElement('beforeend',p4);
@@ -42,4 +42,3 @@ div.insertAdjacentElement('beforeend',p4);
 
 
 // 練習4-5 箇条書き追加プログラム
-
