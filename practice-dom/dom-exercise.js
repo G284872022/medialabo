@@ -39,7 +39,7 @@ p4.insertAdjacentElement('beforeend',photo3);
 div.insertAdjacentElement('beforeend',p4);
 // 練習4-4 箇条書き削除プログラム
 //let li = document.querySelectorAll('li');
-for (let element of location) {
+for (let element of ul.location) {
 	let li = document.querySelectorAll('li');
 	li.remove();
 }
