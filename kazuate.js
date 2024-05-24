@@ -38,17 +38,13 @@ function hantei() {
   }
   //回数
   let sp1 = document.querySelector('span#kaisu');
-  sp1.textContent = kaisu
+  sp1.textContent = kaisu;
   //予想
   let sp2 = document.querySelector('span#answer');
-  sp2.textContent = yoso
-  /*let yo = document.createElement('p');
-  yo = yoso;*/
+  sp2.textContent = yoso;
   //結果
-  /*let r = document.querySelector('p#result');
-  let re = document.createElement('p');
-  re = result;
-  r.insertAdjacentElement('afterend',r);*/
+  let p1 = document.querySelector('p#result');
+  p1.textContent = result;
 
   console.log(kaisu + "回目の予想: " + yoso);
   console.log(result);
