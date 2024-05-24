@@ -39,18 +39,22 @@ function hantei() {
   } else {
     result = "答えは" + kotae + "でした。すでにゲームは終わっています";
   }
+  //回数
   let k = document.querySelector('span#kaisu');
   let kai = document.createElement('p');
   kai = kaisu;
   k.insertAdjacentElement('afterend',kai);
+  //予想
   let a = document.querySelector('span#answer');
   let an = document.createElement('p');
   an = yoso;
   a.insertAdjacentElement('afterend',yoso);
+  //結果
   let r = document.querySelector('p#result');
   let re = document.createElement('p');
   re = result;
   r.insertAdjacentElement('afterend',r);
+  
   console.log(kaisu + "回目の予想: " + yoso);
   console.log(result);
   // 課題3-1における出力先はコンソール
