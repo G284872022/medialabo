@@ -49,12 +49,12 @@ let data = {
 console.log("緯度：" + data["coord"]["lon"]);
 console.log("緯度：" + data["coord"]["lat"]);
 console.log("天気：" + data.weather[0]["description"]);
-console.log("最低気温：" + data["coord"]["lon"]);
-console.log("最高気温：" + data["coord"]["lon"]);
-console.log("湿度：" + data["coord"]["lon"]);
-console.log("風速：" + data["coord"]["lon"]);
-console.log("風向：" + data["coord"]["lon"]);
-console.log("都市名：" + data["coord"]["lon"]);
+console.log("最低気温：" + data["main"]["temp_min"]);
+console.log("最高気温：" + data["main"]["temp_max"]);
+console.log("湿度：" + data["main"]["humidity"]);
+console.log("風速：" + data["wind"]["speed"]);
+console.log("風向：" + data["wind"]["deg"]);
+console.log("都市名：" + data["name"]);
 
 let div1 = document.querySelector('div#result');
 let p1 = document.createElement('p');
@@ -63,7 +63,7 @@ div1.insertAdjacentElement('beforeend', p1);
 
 //let div2 = document.querySelector('div#result');
 let p2 = document.createElement('p');
-p2.textContent = '緯度：' + data["coord"]["lon"];
+p2.textContent = '緯度：' + data["coord"]["lat"];
 div1.insertAdjacentElement('beforeend', p2);
 
 //let div3 = document.querySelector('div#result');
