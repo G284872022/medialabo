@@ -48,7 +48,7 @@ for (let element of li) {
 let ul = document.querySelector('ul#location');
 let sap = document.createElement('li');
 for(let {name, lat, lng} of data) {
-	sap.textContent = name[1]+' ... '+'緯度:'+lat[1]+', 経度:'+lng[1];
+	sap.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',sap); 
 /*let sen = document.createElement('li');
