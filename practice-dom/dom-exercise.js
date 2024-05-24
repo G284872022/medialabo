@@ -48,5 +48,6 @@ for (let element of li) {
 let ul = document.querySelector('ul#location');
 let li2 = document.createElement('li');
 for(let {name, lat, log} of data) {
-	p1.textContent = name+'緯度:'+lat+',経度:'+log; 
+	li2.textContent = name+'緯度:'+lat+',経度:'+log;
+	div.insertAdjacentElement('beforeend',li2); 
 }
