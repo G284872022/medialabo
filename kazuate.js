@@ -10,7 +10,6 @@ let kaisu = 0;
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 hantei();
 
-
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
     kaisu += 1;
@@ -38,15 +37,15 @@ function hantei() {
     result = "答えは" + kotae + "でした。すでにゲームは終わっています";
   }
   //回数
-  let k = document.querySelector('span#kaisu');
-  let kai = document.createElement('p');
-  kai = kaisu;
-  k.insertAdjacentElement('afterend',kai);
+  let sp1 = document.querySelector('span#kaisu');
+  sp1.textContent = kaisu
+  sp1.insertAdjacentElement('afterend',kai);
   //予想
-  let a = document.querySelector('span#answer');
-  let an = document.createElement('p');
-  an = yoso;
-  a.insertAdjacentElement('afterend',yoso);
+  let sp2 = document.querySelector('span#answer');
+  sp2.textContent = yoso
+  /*let yo = document.createElement('p');
+  yo = yoso;*/
+  sp2.insertAdjacentElement('afterend',yoso);
   //結果
   /*let r = document.querySelector('p#result');
   let re = document.createElement('p');
