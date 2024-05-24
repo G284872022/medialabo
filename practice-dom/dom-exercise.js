@@ -48,10 +48,10 @@ for (let element of li) {
 let ul = document.querySelector('ul#location');
 let sap = document.createElement('li');
 for(let {name, lat, log} of data) {
-	sap.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+	sap.textContent = name[1]+' ... '+'緯度:'+lat[1]+', 経度:'+lng[1];
 }
 ul.insertAdjacentElement('beforeend',sap); 
-let sen = document.createElement('li');
+/*let sen = document.createElement('li');
 for(let {name, lat, log} of data) {
 	sen.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
@@ -95,4 +95,4 @@ let oki = document.createElement('li');
 for(let {name, lat, log} of data) {
 	oli.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
-ul.insertAdjacentElement('beforeend',oki); 
+ul.insertAdjacentElement('beforeend',oki); */
