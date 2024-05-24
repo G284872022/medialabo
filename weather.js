@@ -56,3 +56,6 @@ console.log("風速：" + data["coord"]["lon"]);
 console.log("風向：" + data["coord"]["lon"]);
 console.log("都市名：" + data["coord"]["lon"]);
 
+let div1 = document.querySelector('div#result');
+div1.textContent = "緯度：" + data["coord"]["lon"];
+
