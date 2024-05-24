@@ -47,8 +47,8 @@ for (let element of li) {
 // 練習4-5 箇条書き追加プログラム
 let ul = document.querySelector('ul#location');
 let sap = document.createElement('li');
-for(let {name, lat, lng} of data) {
-	sap.textContent = name[1]+' ... '+'緯度:'+lat[1]+', 経度:'+lng[1];
+for(let {name, lat, lng} of data[0]) {
+	sap.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',sap); 
 /*let sen = document.createElement('li');
