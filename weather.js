@@ -73,30 +73,30 @@ div1.insertAdjacentElement('beforeend', p3);
 
 //let div4 = document.querySelector('div#result');
 let p4 = document.createElement('p');
-p4.textContent = "最低気温：" + data["coord"]["lon"];
+p4.textContent = "最低気温：" + data["main"]["temp_min"];
 div1.insertAdjacentElement('beforeend', p4);
 
 //let div5 = document.querySelector('div#result');
 let p5 = document.createElement('p');
-p5.textContent = "最高気温：" + data["coord"]["lon"];
+p5.textContent = "最高気温：" + data["main"]["temp_max"];
 div1.insertAdjacentElement('beforeend', p5);
 
 //let div6 = document.querySelector('div#result');
 let p6 = document.createElement('p');
-p6.textContent = "湿度：" + data["coord"]["lon"];
+p6.textContent = "湿度：" + data["main"]["humidity"];
 div1.insertAdjacentElement('beforeend', p6);
 
 //let div1 = document.querySelector('div#result');
 let p7 = document.createElement('p');
-p7.textContent = "風速：" + data["coord"]["lon"];
+p7.textContent = "風速：" + data["wind"]["speed"];
 div1.insertAdjacentElement('beforeend', p7);
 
 //let div1 = document.querySelector('div#result');
 let p8 = document.createElement('p');
-p8.textContent = "風向：" + data["coord"]["lon"];
+p8.textContent = "風向：" + data["wind"]["deg"];
 div1.insertAdjacentElement('beforeend', p8);
 
 //let div1 = document.querySelector('div#result');
 let p9 = document.createElement('p');
-p9.textContent = "都市名：" + data["coord"]["lon"];
+p9.textContent = "都市名：" + data["name"];
 div1.insertAdjacentElement('beforeend', p9);
