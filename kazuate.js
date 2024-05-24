@@ -47,10 +47,13 @@ function hantei() {
   let an = document.createElement('p');
   an = yoso;
   a.insertAdjacentElement('afterend',yoso);
+  let r = document.querySelector('p#result');
+  let re = document.createElement('p');
+  re = result;
+  r.insertAdjacentElement('afterend',r);
   console.log(kaisu + "回目の予想: " + yoso);
   console.log(result);
   // 課題3-1における出力先はコンソール
-  
 }
 
 
