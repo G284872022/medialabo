@@ -47,52 +47,53 @@ for (let element of li) {
 // 練習4-5 箇条書き追加プログラム
 let ul = document.querySelector('ul#location');
 let sap = document.createElement('li');
-for(let [name, lat, lng] of data[0]) {
+let datasap = data[0];
+for(let {name, lat, lng} of datasap) {
 	sap.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',sap); 
 /*let sen = document.createElement('li');
-for(let {name, lat, log} of data) {
+for(let {name, lat, lng} of data[1]) {
 	sen.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',sen); 
 let sin = document.createElement('li');
-for(let {name, lat, log} of data) {
+for(let {name, lat, lng} of data[2]) {
 	sin.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',sin); 
 let nag = document.createElement('li');
-for(let {name, lat, log} of data) {
+for(let {name, lat, lng} of data[3]) {
 	nag.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',nag);
 let ohs = document.createElement('li');
-for(let {name, lat, log} of data) {
+for(let {name, lat, lng} of data[4]) {
 	ohs.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',ohs); 
 let hir = document.createElement('li');
-for(let {name, lat, log} of data) {
+for(let {name, lat, lng} of data[5]) {
 	hir.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',hir); 
 let koh = document.createElement('li');
-for(let {name, lat, log} of data) {
+for(let {name, lat, lng} of data[6]) {
 	koh.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',koh); 
 let fuk = document.createElement('li');
-for(let {name, lat, log} of data) {
+for(let {name, lat, lng} of data[7]) {
 	fuk.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',fuk); 
 let kag = document.createElement('li');
-for(let {name, lat, log} of data) {
+for(let {name, lat, lng} of data[8]) {
 	kag.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',kag);  
 let oki = document.createElement('li');
-for(let {name, lat, log} of data) {
-	oli.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+for(let {name, lat, lng} of data[9]) {
+	oki.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
 ul.insertAdjacentElement('beforeend',oki); */
