@@ -39,13 +39,11 @@ function hantei() {
   //回数
   let sp1 = document.querySelector('span#kaisu');
   sp1.textContent = kaisu
-  sp1.insertAdjacentElement('afterend',kai);
   //予想
   let sp2 = document.querySelector('span#answer');
   sp2.textContent = yoso
   /*let yo = document.createElement('p');
   yo = yoso;*/
-  sp2.insertAdjacentElement('afterend',yoso);
   //結果
   /*let r = document.querySelector('p#result');
   let re = document.createElement('p');
