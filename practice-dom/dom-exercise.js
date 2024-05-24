@@ -46,8 +46,53 @@ for (let element of li) {
 
 // 練習4-5 箇条書き追加プログラム
 let ul = document.querySelector('ul#location');
-let li2 = document.createElement('li');
+let sap = document.createElement('li');
 for(let {name, lat, log} of data) {
-	li2.textContent = name+'緯度:'+lat+',経度:'+log;
+	sap.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
 }
-ul.insertAdjacentElement('beforeend',li2); 
+ul.insertAdjacentElement('beforeend',sap); 
+let sen = document.createElement('li');
+for(let {name, lat, log} of data) {
+	sen.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',sen); 
+let sin = document.createElement('li');
+for(let {name, lat, log} of data) {
+	sin.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',sin); 
+let nag = document.createElement('li');
+for(let {name, lat, log} of data) {
+	nag.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',nag);
+let ohs = document.createElement('li');
+for(let {name, lat, log} of data) {
+	ohs.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',ohs); 
+let hir = document.createElement('li');
+for(let {name, lat, log} of data) {
+	hir.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',hir); 
+let koh = document.createElement('li');
+for(let {name, lat, log} of data) {
+	koh.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',koh); 
+let fuk = document.createElement('li');
+for(let {name, lat, log} of data) {
+	fuk.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',fuk); 
+let kag = document.createElement('li');
+for(let {name, lat, log} of data) {
+	kag.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',kag);  
+let oki = document.createElement('li');
+for(let {name, lat, log} of data) {
+	oli.textContent = name+' ... '+'緯度:'+lat+', 経度:'+lng;
+}
+ul.insertAdjacentElement('beforeend',oki); 
