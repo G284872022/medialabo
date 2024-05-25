@@ -100,3 +100,11 @@ div1.insertAdjacentElement('beforeend', p8);
 let p9 = document.createElement('p');
 p9.textContent = "都市名：" + data["name"];
 div1.insertAdjacentElement('beforeend', p9);
+
+//検索機能
+p.addEventListener('click', Showid);
+function Showid() {
+	let x = document.querySelector('input[name="id"]');
+  let id = x.value;
+	console.log('検索キー：' + id);
+}
