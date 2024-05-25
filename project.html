@@ -8,6 +8,22 @@
 	  href="project.css">
   </head>
   <body>
+    <h1>天候情報の検索</h1>
+    <label for="weather">都市名： </label>
+	<input type="text" name="city" size="10">
+    <label for="weather-info">調べたい項目： </label>
+    <select name ="info" id="select-info">
+        <option value="">-選んでください-</option>
+        <option value="lon">緯度</option>
+        <option value="lat">経度</option>
+        <option value="description">天気</option>
+        <option value="temp_min">最低気温</option>
+        <option value="temp_max">最高気温</option>
+        <option value="humidity">湿度</option>
+        <option value="speed">風速</option>
+        <option value="deg">風向</option>
+    </select>
+	<button id="print">検索</button>
     <div id="result"></div>
   </body>
 </html>
