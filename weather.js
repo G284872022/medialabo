@@ -102,6 +102,7 @@ p9.textContent = "都市名：" + data["name"];
 div1.insertAdjacentElement('beforeend', p9);
 
 //検索機能
+let p = document.querySelector('#print');
 p.addEventListener('click', Showid);
 function Showid() {
 	let x = document.querySelector('input[name="id"]');
