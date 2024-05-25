@@ -10,7 +10,21 @@
   <body>
     <h1>天候情報の検索</h1>
     <label for="weather">都市名： </label>
-	<input type="text" name="city" size="10">
+	<select name ="city" id="city-name">
+        <option value="">-選んでください-</option>
+        <option value="Cairo">カイロ</option>
+        <option value="Moscow">モスクワ</option>
+        <option value="Johannesburg">ヨハネスブルク</option>
+        <option value="Tokyo">東京</option>
+        <option value="Singapore">シンガポール</option>
+        <option value="Sydney">シドニー</option>
+        <option value="London">ロンドン</option>
+        <option value="Paris">パリ</option>
+        <option value="Rio de Janeiro">リオデジャネイロ</option>
+        <option value="New York">ニューヨーク</option>
+        <option value="Los Angeles">ロサンゼルス</option>
+    </select>
+    <p></p>
     <label for="weather-info">調べたい項目： </label>
     <select name ="info" id="select-info">
         <option value="">-選んでください-</option>
