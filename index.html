@@ -6,14 +6,19 @@
     <link rel="stylesheet"
 	  href="style.css">
   </head>
-  <body>
+  <p>
     <h1>「Webコンテンツ作成」の成果</h1>
     <h2>本テーマについて</h2>
     <h2>プロジェクト課題について</h2>
     <p>プロジェクト課題で作成したページ：<a href="project.html" title="プロジェクト"target="_blank">project.html</a></p>
     <h2>数当てゲーム</h2>
+    <h4>課題3-1における進捗</h4>
+    <p><strong>kazuate.js</strong>と<strong>kazuate.html</strong>を作成し、HTMLのコンソール上に数当てゲームを実装した。</p>
+    <p>kazuate.js内に予想と答えが一致しているか判定するhantei()メソッドを作りその結果をコンソール上に表示するようにした</p>
     <h4>課題4-2における進捗</h4>
-    <p>今課題ではDOMを利用しJavaScriptのファイル内で実行されたhantei()メソッドの結果をproject.html内で表示するようにした。</p>
+    <p>今課題ではDOMを利用しJavaScriptのファイル内で実行されたhantei()メソッドの結果をコンソール上からproject.html内で表示するようにした。</p>
+    <h4>課題5-1における進捗</h4>
+    <p>kazuate.html内にラベル、テキストボックス、回答ボタンを設置する。またkazuate.js内で回答ボタンのクリックイベントハンドラとしてhantei()を登録し、hantei()内の変数yosoをテキストボックス内の数値に指定した。</p>
     <h2>各授業回の学習事項</h2>
     <h3>第１回 WWW と HTML</h3>
     <p>Webページは<strong>HTML</strong>、<strong>CSS</strong>、<strong>JavaScript</strong>、<strong>画像・音声・動画</strong>の４つの要素によって構成される</p>
@@ -85,9 +90,21 @@
     <p><strong>DOM(Document Object Model)</strong>とはWebコンテンツの表現方法の一種。</p>
     <p>DOMとJavaScriptを用いることでWebコンテンツ内の読み取り、変更が行えるようになり、動きのあるWebページ制作を行うことができる。</p>
     <img class="sign" src="domtree-3.png">
-    
+    <p>HTML文書はDOMとして上の図のように表すことができる。</p>
+    <p>*赤い四角のノードが要素、六角形のノードが属性、丸のノードがテキストに対応している</p>
+    <p>documentを基点としてHTML全てのノードを検索する処理を行なっている。</p>
+    <p>DOMの各ノードは、JavaScriptプログラムにおいてオブジェクトとして利用できる。新たなノードの取得、取得したノードの変更や、新しいオブジェクトの追加によるDOMの構成の変更等を行うことができる。</p>
     <p>演習の成果：<a href="practice-dom/dom-exercise.html" title="演習4-5"target="_blank">演習4-5のHTMLファイル</a></p>
 
     <h3>第5回 イベント処理</h3>
+    <h4>イベントとは</h4>
+    <p><strong>イベント</strong>とはWebページ上で起こせる動作や出来事のこと。</p>
+    <p>例として、キーを押す、動画の再生などといった処理がある</p>
+    <h4>イベント処理の一例</h4>
+    <li><strong>button</strong>：HTML上にボタンの要素を追加する</li>
+    <li><strong>addEventlistener()</strong>：イベントハンドラ*の登録</li>
+    <li><strong>'click'</strong>：要素をクリックされた時にイベントが起こる</li>
+    <p>*イベントが発生した時に実行される処理のこと</p>
+    <p>演習の成果：<a href="practice-event/event-list.html" title="演習5-3"target="_blank">演習5-3のHTMLファイル</a></p>
   </body>
 </html>
