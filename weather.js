@@ -113,8 +113,8 @@ function Showid() {
 
 //通信処理
 function sendRequest() {
-  Showid()
-	let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/' + id + '.json';
+  Wid = Showid()
+	let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/' + Wid + '.json';
 
 	axios.get(url)
 		.then(showResult)
