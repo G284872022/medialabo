@@ -1,4 +1,4 @@
-let data = {
+/*let data = {
   "coord": {
     "lon": 116.3972,
     "lat": 39.9075
@@ -43,10 +43,10 @@ let data = {
   "id": 1816670,
   "name": "北京市",
   "cod": 200
-};
+};*/
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log("緯度：" + data["coord"]["lon"]);
+/*console.log("緯度：" + data["coord"]["lon"]);
 console.log("緯度：" + data["coord"]["lat"]);
 console.log("天気：" + data.weather[0]["description"]);
 console.log("最低気温：" + data["main"]["temp_min"]);
@@ -99,7 +99,7 @@ div1.insertAdjacentElement('beforeend', p8);
 //let div1 = document.querySelector('div#result');
 let p9 = document.createElement('p');
 p9.textContent = "都市名：" + data["name"];
-div1.insertAdjacentElement('beforeend', p9);
+div1.insertAdjacentElement('beforeend', p9);*/
 
 //検索機能
 let p = document.querySelector('#print');
@@ -130,8 +130,8 @@ function showResult(resp) {
 		data = JSON.parse(data);
 	}
   console.log('通信成功');
-  console.log(data);
-  console.log(data.coord);
+  let pw = document.createElement('p');
+  pw.textContent = "都市名：" + data["name"];
 }
 
 // 通信エラーが発生した時の処理
