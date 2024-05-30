@@ -128,10 +128,10 @@ function showResult(resp) {
 
 	if (typeof data === 'string') {
 		data = JSON.parse(data);
-    console.log('通信成功');
-    console.log(data);
-    console.log(data.coord);
 	}
+  console.log('通信成功');
+  console.log(data);
+  console.log(data.coord);
 }
 
 // 通信エラーが発生した時の処理
