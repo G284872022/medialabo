@@ -89,7 +89,7 @@ function showResult(resp) {
   let div1 = document.querySelector('div#result');
   let div2 = document.querySelector('p#city');
   div2.remove();
-  let pC = document.createElement('p#city');
+  let pC = document.createElement('div#result');
   //let pW = document.createElement('p');
   pC.textContent = "都市名：" + data["name"];
   //pW.textContent = "都市名：" + data.value;
