@@ -66,6 +66,12 @@ function Showid() {
 	return id;
 }
 
+function Showinfo() {
+  let y = document.querySelector('select[name="info"]');
+  let info = y.value
+	return info;
+}
+
 //通信処理
 function sendRequest() {
   Wid = Showid()
@@ -86,17 +92,20 @@ function showResult(resp) {
 	}
   console.log('通信成功');
   
-  //要素の削除
+  //検索結果の削除
   let divd = document.querySelectorAll('div#result > p');
   for (let element of divd) {
     element.remove();
   }
 
-  //検索結果の表示
+  //検索結果の表示（都市名）
   let div1 = document.querySelector('div#result');
   let pC = document.createElement('p');
   pC.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pC);
+
+  let pW = document.createElement('p');
+  pW.textContent = "都市名：" + data["name"];
 }
 
 // 通信エラーが発生した時の処理
