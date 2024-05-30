@@ -129,6 +129,7 @@ function showResult(resp) {
 	if (typeof data === 'string') {
 		data = JSON.parse(data);
     console.log(data);
+    console.log(data.coord);
 	}
 }
 
