@@ -103,11 +103,41 @@ div1.insertAdjacentElement('beforeend', p9);
 
 //検索機能
 let p = document.querySelector('#print');
-p.addEventListener('click', Showid);
-//let x = document.querySelector('select[name="id"]');
-//let id = x.value;
+p.addEventListener('click', sendRequest);
+
 function Showid() {
 	let x = document.querySelector('select[name="id"]');
   let id = x.value;
-	console.log('検索キー：' + id);
+	return id;
+}
+
+//通信処理
+function sendRequest() {
+  Showid()
+	let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/' + id + '.json';
+
+	axios.get(url)
+		.then(showResult)
+		.catch(showError)
+		.then(finish);
+}
+
+// 通信が成功した時の処理
+function showResult(resp) {
+	let data = resp.data;
+
+	if (typeof data === 'string') {
+		data = JSON.parse(data);
+    console.log(data);
+	}
+}
+
+// 通信エラーが発生した時の処理
+function showError(err) {
+	console.log(err);
+}	
+
+// 通信の最後にいつも実行する処理
+function finish() {
+	console.log('Ajax 通信が終わりました');
 }
