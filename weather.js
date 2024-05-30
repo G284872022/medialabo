@@ -86,12 +86,13 @@ function showResult(resp) {
 	}
   console.log('通信成功');
   
-  let div1 = document.querySelector('div#result');
+  //要素の削除
   let div2 = document.querySelectorAll('div#result > p');
-  pC = document.createElement('p');
   for (let element of div2) {
     element.remove();
   }
+  let div1 = document.querySelector('div#result');
+  pC = document.createElement('p');
   pC.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pC);
 }
