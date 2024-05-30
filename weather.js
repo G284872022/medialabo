@@ -87,7 +87,7 @@ function showResult(resp) {
   console.log('通信成功');
 
   let div1 = document.querySelector('div#result');
-  div1.remove();
+  //div1.remove();
   let pw = document.createElement('p');
   pw.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pw);
