@@ -86,11 +86,10 @@ function showResult(resp) {
 	}
   console.log('通信成功');
   
-  let count = 0;
   let div1 = document.querySelector('div#result');
   let div2 = document.querySelectorAll('div#result > p');
-  div2.remove();
   pC = document.createElement('p');
+  div2.remove();
   pC.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pC);
 }
