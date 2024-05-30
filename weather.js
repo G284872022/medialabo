@@ -87,10 +87,12 @@ function showResult(resp) {
   console.log('通信成功');
 
   let div1 = document.querySelector('div#result');
-  //div1.remove();
-  let pw = document.createElement('p');
-  pw.textContent = "都市名：" + data["name"];
-  div1.insertAdjacentElement('beforeend', pw);
+  div1.remove();
+  let pC = document.createElement('p');
+  //let pW = document.createElement('p');
+  pC.textContent = "都市名：" + data["name"];
+  //pW.textContent = "都市名：" + data.value;
+  div1.insertAdjacentElement('beforeend', pC);
 }
 
 // 通信エラーが発生した時の処理
