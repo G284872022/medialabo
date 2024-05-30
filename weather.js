@@ -128,6 +128,7 @@ function showResult(resp) {
 
 	if (typeof data === 'string') {
 		data = JSON.parse(data);
+    console.log('通信成功');
     console.log(data);
     console.log(data.coord);
 	}
