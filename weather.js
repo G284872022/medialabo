@@ -132,6 +132,7 @@ function showResult(resp) {
   console.log('通信成功');
   let pw = document.createElement('p');
   pw.textContent = "都市名：" + data["name"];
+  div1.insertAdjacentElement('beforeend', pw);
 }
 
 // 通信エラーが発生した時の処理
