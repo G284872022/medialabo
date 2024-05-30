@@ -88,13 +88,11 @@ function showResult(resp) {
   
   let count = 0;
   let div1 = document.querySelector('div#result');
+  let div2 = document.querySelectorAll('div#result > p');
+  div2.remove();
   pC = document.createElement('p');
-  if(count > 0){
-    div1.remove();
-  }
   pC.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pC);
-  count += 1;
 }
 
 // 通信エラーが発生した時の処理
