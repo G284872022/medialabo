@@ -85,14 +85,16 @@ function showResult(resp) {
 		data = JSON.parse(data);
 	}
   console.log('通信成功');
-
+  
+  let pC;
   let div1 = document.querySelector('div#result');
-  let div2 = document.querySelector('p#city');
-  div2.remove();
-  let pC = document.createElement('div#result');
-  //let pW = document.createElement('p');
+  //let div2 = document.querySelector('p');
+  pC = document.createElement('p');
+  if(pC == null){
+    div2.remove();
+  }
+  //pC = document.createElement('p');
   pC.textContent = "都市名：" + data["name"];
-  //pW.textContent = "都市名：" + data.value;
   div1.insertAdjacentElement('beforeend', pC);
 }
 
