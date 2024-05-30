@@ -86,16 +86,15 @@ function showResult(resp) {
 	}
   console.log('通信成功');
   
-  let pC;
+  let count = 0;
   let div1 = document.querySelector('div#result');
-  //let div2 = document.querySelector('p');
   pC = document.createElement('p');
-  if(pC == null){
-    div2.remove();
+  if(count > 0){
+    div1.remove();
   }
-  //pC = document.createElement('p');
   pC.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pC);
+  count += 1;
 }
 
 // 通信エラーが発生した時の処理
