@@ -104,10 +104,10 @@ div1.insertAdjacentElement('beforeend', p9);
 //検索機能
 let p = document.querySelector('#print');
 p.addEventListener('click', Showid);
-let x = document.querySelector('select[name="id"]');
-let id = x.value;
+//let x = document.querySelector('select[name="id"]');
+//let id = x.value;
 function Showid() {
-	//let x = document.querySelector('select[name="id"]');
-  //let id = x.value;
+	let x = document.querySelector('select[name="id"]');
+  let id = x.value;
 	console.log('検索キー：' + id);
 }
