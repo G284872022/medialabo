@@ -130,6 +130,8 @@ function showResult(resp) {
 		data = JSON.parse(data);
 	}
   console.log('通信成功');
+  
+  let div1 = document.querySelector('div#result');
   let pw = document.createElement('p');
   pw.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pw);
