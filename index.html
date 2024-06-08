@@ -9,8 +9,13 @@
   <p>
     <h1>「Webコンテンツ作成」の成果</h1>
     <h2>本テーマについて</h2>
+    <p>本テーマでは6回の授業を通して主にHTML、CSS、JavaScriptを用いたWebページ作成について学んだ。</p>
+    <p>この授業内では課題として Webページを作成する<strong>index.html</strong>,数当てゲームを作成する<strong>kazuate.html</strong>,自分の選んだテーマに合わせた検索機能を実装する<strong>project.html</strong>の3つに取り組んだ。</p>
+    <p>この3つの課題を通してWebページの作成、装飾、機能の実装、書き換え、イベント・通信処理等の方法について学んだ。</p>
+
     <h2>プロジェクト課題について</h2>
     <p>プロジェクト課題で作成したページ：<a href="project.html" title="プロジェクト"target="_blank">project.html</a></p>
+
     <h2>数当てゲーム</h2>
     <h4>課題3-1における進捗</h4>
     <p><strong>kazuate.js</strong>と<strong>kazuate.html</strong>を作成し、HTMLのコンソール上に数当てゲームを実装した。</p>
@@ -19,6 +24,8 @@
     <p>今課題ではDOMを利用しJavaScriptのファイル内で実行されたhantei()メソッドの結果をコンソール上からproject.html内で表示するようにした。</p>
     <h4>課題5-1における進捗</h4>
     <p>kazuate.html内にラベル、テキストボックス、回答ボタンを設置する。またkazuate.js内で回答ボタンのクリックイベントハンドラとしてhantei()を登録し、hantei()内の変数yosoをテキストボックス内の数値に指定した。</p>
+    <p>数当てゲームのWebページ：<a href="kazuate.html" title="数当てゲーム"target="_blank">kazuate.html</a></p>
+
     <h2>各授業回の学習事項</h2>
     <h3>第１回 WWW と HTML</h3>
     <p>Webページは<strong>HTML</strong>、<strong>CSS</strong>、<strong>JavaScript</strong>、<strong>画像・音声・動画</strong>の４つの要素によって構成される</p>
@@ -48,13 +55,17 @@
     <p>CSSにはテキストの色変更や背景色の追加など様々な装飾を加えることができ、それによってより読みやすく見た目の良いWebページの作成が可能。</p>
     <p>CSSは装飾したい要素を指定する<strong>セレスタ</strong>装飾の種類を指定する<strong>プロパティ名</strong>装飾の具体的な値を指定する<strong>プロパティ値</strong>からなる</p>
     <h4>・CSSの例</h4>
-    <ol>
+    <div id="zentai">
+    <div>
+      <ol>
       <li><strong>(color)</strong>：テキストの色変更を行える</li>
       <li><strong>(font-weight)</strong>：テキストの太さが変更できる</li>
       <li><strong>(text-shadow)</strong>：テキストに影を追加できる</li>
       <li><strong>(font-family)</strong>：テキストのフォントを変更できる</li>
       <li><strong>(border-bottom)</strong>：下線を追加できる</li>
     </ol>
+    </div>
+    </div>
     <p>これらはほんの一例で他にも多様な種類のCSSによって装飾を行える</p>
     <ul>
       <p>演習の成果：<a href="practice-css/browser-intro.html" title="演習2-3"target="_blank">演習2-3のHTMLファイル</a></p>
@@ -67,15 +78,25 @@
     <p>ブラウザにはJavaScriptを利用した機能(API)がある。</p>
     <h4>・APIの例</h4>
     <h4>・ブラウザAPI</h4>
-    <ol>
-      <li><strong>DOM API</strong>：プログラムを通じたHTML要素や属性、CSS などの追加・編集・削除を可能にする </li>
-      <li><strong>Geolocation API</strong>：プログラムを通じて現在位置を取得する</li>
-      <li><strong>GanvasとWebGL</strong>：2Dと3Dのグラフィックを扱うプログラミングを可能にする</li>
-      <li><strong>WebRTC</strong>リアルタイムの通信やビデオを用いた遠隔会議を可能にする</li>
-    </ol>
+    <div id="zentai">
+      <div>
+        <ol>
+        <li><strong>DOM API</strong>：プログラムを通じたHTML要素や属性、CSS などの追加・編集・削除を可能にする </li>
+        <li><strong>Geolocation API</strong>：プログラムを通じて現在位置を取得する</li>
+        <li><strong>GanvasとWebGL</strong>：2Dと3Dのグラフィックを扱うプログラミングを可能にする</li>
+        <li><strong>WebRTC</strong>リアルタイムの通信やビデオを用いた遠隔会議を可能にする</li>
+      </ol>
+      </div>
+    </div>
     <h4>・サードパーティAPI</h4>
-    <li><strong>Twitter API</strong>：ツイートの検索と表示</li>
-    <li><strong>Google Map API</strong>：Webページにマップを貼り付けられる</li>
+    <div id="zentai2">
+      <div>
+        <ol>
+          <li><strong>Twitter API</strong>：ツイートの検索と表示</li>
+          <li><strong>Google Map API</strong>：Webページにマップを貼り付けられる</li>
+        </ol>
+      </div>
+    </div>
     <h4>インタプリタ言語とコンパイル言語</h4>
     <p>名前の似ているJavaとJavaScriptだが大きな違いとしてインタプリタ言語かコンパイル言語かの違いがある。</p>
     <h4>コンパイル言語</h4>
@@ -94,7 +115,7 @@
     <p>*赤い四角のノードが要素、六角形のノードが属性、丸のノードがテキストに対応している</p>
     <p>documentを基点としてHTML全てのノードを検索する処理を行なっている。</p>
     <p>DOMの各ノードは、JavaScriptプログラムにおいてオブジェクトとして利用できる。新たなノードの取得、取得したノードの変更や、新しいオブジェクトの追加によるDOMの構成の変更等を行うことができる。</p>
-    <p>演習の成果：<a href="practice-dom/dom-exercise.html" title="演習4-5"target="_blank">演習4-5のHTMLファイル</a></p>
+    <p>演習の成果：<a href="practice-dom/dom-exercise.html" title="演習4-5"target="_blank">演習4-2~5のHTMLファイル</a></p>
 
     <h3>第5回 イベント処理</h3>
     <h4>イベントとは</h4>
@@ -105,6 +126,30 @@
     <li><strong>addEventlistener()</strong>：イベントハンドラ*の登録</li>
     <li><strong>'click'</strong>：要素をクリックされた時にイベントが起こる</li>
     <p>*イベントが発生した時に実行される処理のこと</p>
+    <p>例として、下の演習ページではマウスを重ねた時、クリックした時などのイベント処理を行なっている。</p>
     <p>演習の成果：<a href="practice-event/event-list.html" title="演習5-3"target="_blank">演習5-3のHTMLファイル</a></p>
+
+    <h3>授業を通して</h3>
+    <h4>・工夫点</h4>
+    <p>出来るだけ自分（作成側）も見る側もわかりやすいようなWebページ作成を心がけて作った。</p>
+    <p>このページの作成のデザイン面で工夫した点として、過度な装飾で逆に見えづらくなる、ということがないように出来るだけシンプルに見やすいデザインになるよう工夫した。</p>
+    <p>また、プログラムの作成においても修正点が分かりやすいように、コンソールで動作を確認した後、機能ごとに少しづつ、細かく分けて実装するようにした。</p>
+    <h4>・苦心点</h4>
+    <p>やはり、プログラム面が一番苦労した。</p>
+    <p>自分にはHTMLやJavaScriptの経験がほとんどなく不慣れだったこと、実装する前にコンソールで一度動作確認するといった慣れない手順でのプログラミングだったことなど、新しい要素に慣れるまで戸惑うことが多かった。</p>
+    <p>どうしても、意識しないと今まで学習してきたJava等の手順でプログラミングしてしまう。</p>
+    <p>JavaScriptを初めて扱った回での数当てゲームの実装時などは慣れないプログラミングだった事、課題の内容も少し大変だったこともあり苦労した。</p>
+    <h4>・強調点</h4>
+    <p>なるべく、学習面で大事だと思った部分、自分が見る側だったら気になる部分、といったところを見やすいよう強調した。</p>
+    <p>上でも書いたが見やすいように強調される部分がくどくなりすぎないよう、他の部分が損なわれることのないよう気をつけた。</p>
+    <h4>・感想</h4>
+    <p>今までのプログラミングでは、言われたものを作る、機能の実装のみを考えるといった形でプログラミングで作ったものを利用することまで考えてはいなかった。</p>
+    <p>だが、今回はWebページということで見る側、利用する側のことも考えたプログラミングが要求され、ただ機能を実装するだけ、とはいかなくなった。</p>
+    <p>実際、自分が工夫した点は機能面より、見やすさ、利用のしやすさといった部分が多くなった。</p>
+    <p>社会でプログラミングをするとなれば必ず利用者はいる。もちろん作る側はそのことも考えて作成していかなければならない。</p>
+    <p>当然のことだがその事を今のうちにでも少し体感できたというのはいい経験になった。ただプログラムのやり方を学ぶ、ということ以上の意味のある授業だと感じられた。</p>
+    <h3>参考文献</h3>
+    <p>https://developer.mozilla.org/ja/docs/Web/HTML</p>
+    <p>*授業資料に貼られていたものですが一応</p>
   </body>
 </html>
