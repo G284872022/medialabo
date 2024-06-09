@@ -54,7 +54,7 @@ function showResult(resp) {
 		if (r.checked) {		// r が選択されていたら
       if (wr == coord.lon){
         let pW = document.createElement('p');
-        pW.textContent =  wr + data["name"];
+        pW.textContent =  "緯度：" + data["coord"];
         div1.insertAdjacentElement('beforeend', pC);
       }
 		}
