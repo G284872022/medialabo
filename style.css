@@ -1,8 +1,14 @@
+body{
+	background-color: #f5f5df;
+}
 h1{
-    background: linear-gradient(to left, white, rgb(109, 109, 230));
+    background: linear-gradient(to left, #f4f4d7, rgb(109, 109, 230));
 }
 h2{
-    background-color: rgb(198, 198, 198);
+    background-color: rgb(164, 247, 247);
+}
+h3{
+	background-color: rgb(208, 246, 131);
 }
 div#zentai {
 	display: grid;
@@ -14,6 +20,7 @@ div#zentai {
 }
 div#zentai > div {
 	margin-left: 5px;
+	border: black;
 	background-color: #ffefaf;
 }
 
