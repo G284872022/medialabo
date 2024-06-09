@@ -53,6 +53,7 @@ function showResult(resp) {
 	for (let r of rs) {
 		if (r.checked) {		// r が選択されていたら
       if (wr == coord.lon){
+        console.log('緯度');
         let pW = document.createElement('p');
         pW.textContent =  "緯度：" + data["coord"];
         div1.insertAdjacentElement('beforeend', pC);
