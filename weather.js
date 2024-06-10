@@ -47,19 +47,17 @@ function showResult(resp) {
   pC.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pC);
 
-  let pW = document.createElement('p');
-  pW.textContent = "緯度：" + data.coord.lon;
   console.log(data.coord.lon);
   div1.insertAdjacentElement('beforeend', pW);
 
   //検索結果の表示（天候）
-  /*let wr = Showinfo();
+  let wr = Showinfo();
   let pW = document.createElement('p');
   if(wr == "coord.lon") {
-    pW.textContent = "緯度：" + coord.lon;
-    console.log(緯度);
+    pW.textContent = "緯度：" + data.coord.lon;
+    console.log(data.coord.lon);
     div1.insertAdjacentElement('beforeend', pW);
-  } else if(wr == coord.lat) {
+  } /*else if(wr == coord.lat) {
     pW.textContent = "緯度：" + data["name"];
     console.log(緯度);
   } else if(wr == coord.lon) {
