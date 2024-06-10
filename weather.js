@@ -10,8 +10,8 @@ function Showid() {
 }
 
 function Showinfo() {
-  let y = document.querySelector('select[name="info"]');
-  let info = y.id;
+  let y = document.querySelectorAll('select[name="weather"]');
+  let info = y.value;
 	return info;
 }
 
@@ -49,6 +49,29 @@ function showResult(resp) {
 
   //検索結果の表示（天候）
   let wr = Showinfo();
+  let pW = document.createElement('p');
+  if(wr == "coord.lon") {
+    pW.textContent = "緯度：" + coord.lon;
+    console.log(緯度);
+    div1.insertAdjacentElement('beforeend', pW);
+  } /*else if(wr == coord.lat) {
+    pW.textContent = "緯度：" + data["name"];
+    console.log(緯度);
+  } else if(wr == coord.lon) {
+    pW.textContent = "緯度：" + data["name"];
+    console.log(緯度);
+  } else if(wr == coord.lon) {
+    pW.textContent = "緯度：" + data["name"];
+    console.log(緯度);
+  } else if(wr == coord.lon) {
+    pW.textContent = "緯度：" + data["name"];
+    console.log(緯度);
+  } else if(wr == coord.lon) {
+    pW.textContent = "緯度：" + data["name"];
+    console.log(緯度);
+  }*/
+
+  /*
   let rs = document.querySelectorAll('input[name="weather"]');
 	for (let r of rs) {
 		if (r.checked) {		// r が選択されていたら
@@ -56,11 +79,11 @@ function showResult(resp) {
         console.log('緯度');
         let div1 = document.querySelector('div#result');
         let pW = document.createElement('p');
-        pW.textContent =  "緯度：" + data["coord"];
+        pW.textContent =  "緯度：" + data["coord"]["lon"];
         div1.insertAdjacentElement('beforeend', pC);
       }
 		}
-	}
+	}*/
 }
 
 
@@ -73,3 +96,38 @@ function showError(err) {
 function finish() {
 	console.log('Ajax 通信が終わりました');
 }
+
+/*
+<div>
+      <input type="checkbox" name="weather" id="coord.lon" value="coord.lon">
+      <label for="lon">緯度</label>
+    </div>
+    <div>
+      <input type="checkbox" name="weather" id="coord.lat" value="coord.lat">
+      <label for="lat">経度</label>
+    </div>
+    <div>
+      <input type="checkbox" name="weather" id="weather.description" value="weather.description">
+      <label for="lat">天気</label>
+    </div>
+    <div>
+      <input type="checkbox" name="weather" id="main.temp_min" value="main.temp_min">
+      <label for="lon">最低気温</label>
+    </div>
+    <div>
+      <input type="checkbox" name="weather" id="main.temp_min" value="main.temp_min">
+      <label for="lat">最高気温</label>
+    </div>
+    <div>
+      <input type="checkbox" name="weather" id="main.humidity" value="main.humidity">
+      <label for="lat">湿度</label>
+    </div>
+    <div>
+      <input type="checkbox" name="weather" id="wind.speed" value="wind.speed">
+      <label for="lat">風速</label>
+    </div>
+    <div>
+      <input type="checkbox" name="weather" id="wind.deg" value="wind.deg">
+      <label for="lat">風向</label>
+    </div>
+*/ 
