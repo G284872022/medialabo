@@ -47,14 +47,12 @@ function showResult(resp) {
   pC.textContent = "都市名：" + data["name"];
   div1.insertAdjacentElement('beforeend', pC);
 
-  console.log(data.coord.lon);
-  div1.insertAdjacentElement('beforeend', pW);
-
   //検索結果の表示（天候）
   let wr = Showinfo();
   let pW = document.createElement('p');
   if(wr == "coord.lon") {
     pW.textContent = "緯度：" + data.coord.lon;
+    console.log(wr);
     console.log(data.coord.lon);
     div1.insertAdjacentElement('beforeend', pW);
   } /*else if(wr == coord.lat) {
@@ -74,19 +72,6 @@ function showResult(resp) {
     console.log(緯度);
   }*/
 
-  /*
-  let rs = document.querySelectorAll('input[name="weather"]');
-	for (let r of rs) {
-		if (r.checked) {		// r が選択されていたら
-      if (wr == coord.lon){
-        console.log('緯度');
-        let div1 = document.querySelector('div#result');
-        let pW = document.createElement('p');
-        pW.textContent =  "緯度：" + data["coord"]["lon"];
-        div1.insertAdjacentElement('beforeend', pC);
-      }
-		}
-	}*/
 }
 
 
