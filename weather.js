@@ -50,9 +50,9 @@ function showResult(resp) {
   //検索結果の表示（天候）
   let wr = Showinfo();
   let pW = document.createElement('p');
+  console.log(wr);
   if(wr == "coord.lon") {
     pW.textContent = "緯度：" + data.coord.lon;
-    console.log(wr);
     console.log(data.coord.lon);
     div1.insertAdjacentElement('beforeend', pW);
   } /*else if(wr == coord.lat) {
