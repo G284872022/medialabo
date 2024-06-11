@@ -10,7 +10,7 @@ function Showid() {
 }
 
 function Showinfo() {
-  let y = document.querySelector('select#weather');
+  let y = document.querySelector('select[name="weather"]');
   let info = y.value;
 	return info;
 }
