@@ -49,7 +49,7 @@ function showResult(resp) {
   div1.insertAdjacentElement('beforeend', pC);
 
   //検索結果の表示（天候）
-  Wr = Showinfo();
+  //Wr = Showinfo();
   let pW = document.createElement('p');
   console.log(wr);
   if(Wr == 'coord.lon') {
