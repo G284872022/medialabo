@@ -10,14 +10,15 @@ function Showid() {
 }
 
 function Showinfo() {
-  let y = document.querySelectorAll('select[name="weather"]');
+  let y = document.querySelector('select#weather');
   let info = y.value;
 	return info;
 }
 
 //通信処理
 function sendRequest() {
-  Wid = Showid()
+  Wid = Showid();
+  Wr = Showinfo();
 	let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/' + Wid + '.json';
 
 	axios.get(url)
@@ -48,10 +49,10 @@ function showResult(resp) {
   div1.insertAdjacentElement('beforeend', pC);
 
   //検索結果の表示（天候）
-  wr = Showinfo();
+  Wr = Showinfo();
   let pW = document.createElement('p');
   console.log(wr);
-  if(wr == "coord.lon") {
+  if(Wr == 'coord.lon') {
     pW.textContent = "緯度：" + data.coord.lon;
     console.log(data.coord.lon);
     div1.insertAdjacentElement('beforeend', pW);
