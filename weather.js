@@ -56,22 +56,28 @@ function showResult(resp) {
     pW.textContent = "緯度：" + data.coord.lon;
     console.log(data.coord.lon);
     div1.insertAdjacentElement('beforeend', pW);
-  } /*else if(wr == coord.lat) {
-    pW.textContent = "緯度：" + data["name"];
-    console.log(緯度);
-  } else if(wr == coord.lon) {
-    pW.textContent = "緯度：" + data["name"];
-    console.log(緯度);
-  } else if(wr == coord.lon) {
-    pW.textContent = "緯度：" + data["name"];
-    console.log(緯度);
-  } else if(wr == coord.lon) {
-    pW.textContent = "緯度：" + data["name"];
-    console.log(緯度);
-  } else if(wr == coord.lon) {
-    pW.textContent = "緯度：" + data["name"];
-    console.log(緯度);
-  }*/
+  } else if(wr == "coord.lat") {
+    pW.textContent = "経度：" + data.coord.lon;
+    div1.insertAdjacentElement('beforeend', pW);
+  } else if(wr == "weather.description") {
+    pW.textContent = "天気：" + data.weather.description;
+    div1.insertAdjacentElement('beforeend', pW);
+  } else if(wr == "main.temp_min") {
+    pW.textContent = "最低気温：" + data.main.temp_min;
+    div1.insertAdjacentElement('beforeend', pW);
+  } else if(wr == "main.temp_max") {
+    pW.textContent = "最高気温：" + data.main.temp_max;
+    div1.insertAdjacentElement('beforeend', pW);
+  } else if(wr == "main.humidity") {
+    pW.textContent = "湿度：" + data.main.humidity;
+    div1.insertAdjacentElement('beforeend', pW);
+  } else if(wr == "wind.speed") {
+    pW.textContent = "風速：" + data.wind.speed;
+    div1.insertAdjacentElement('beforeend', pW);
+  } else if(wr == "wind.deg") {
+    pW.textContent = "風向き：" + data.wind.deg;
+    div1.insertAdjacentElement('beforeend', pW);
+  } 
 
 }
 
