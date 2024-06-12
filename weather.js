@@ -52,7 +52,7 @@ function showResult(resp) {
   //Wr = Showinfo();
   let pW = document.createElement('p');
   console.log(Wr);
-  if(Wr == 'coord.lon') {
+  if(Wr == "coord.lon") {
     pW.textContent = "緯度：" + data.coord.lon;
     console.log(data.coord.lon);
     div1.insertAdjacentElement('beforeend', pW);
