@@ -49,7 +49,6 @@ function showResult(resp) {
   div1.insertAdjacentElement('beforeend', pC);
 
   //検索結果の表示（天候）
-  //Wr = Showinfo();
   let pW = document.createElement('p');
   if(Wr == "coord.lon") {
     pW.textContent = "緯度：" + data.coord.lon;
@@ -89,38 +88,3 @@ function showError(err) {
 function finish() {
 	console.log('Ajax 通信が終わりました');
 }
-
-/*
-<div>
-      <input type="checkbox" name="weather" id="coord.lon" value="coord.lon">
-      <label for="lon">緯度</label>
-    </div>
-    <div>
-      <input type="checkbox" name="weather" id="coord.lat" value="coord.lat">
-      <label for="lat">経度</label>
-    </div>
-    <div>
-      <input type="checkbox" name="weather" id="weather.description" value="weather.description">
-      <label for="lat">天気</label>
-    </div>
-    <div>
-      <input type="checkbox" name="weather" id="main.temp_min" value="main.temp_min">
-      <label for="lon">最低気温</label>
-    </div>
-    <div>
-      <input type="checkbox" name="weather" id="main.temp_min" value="main.temp_min">
-      <label for="lat">最高気温</label>
-    </div>
-    <div>
-      <input type="checkbox" name="weather" id="main.humidity" value="main.humidity">
-      <label for="lat">湿度</label>
-    </div>
-    <div>
-      <input type="checkbox" name="weather" id="wind.speed" value="wind.speed">
-      <label for="lat">風速</label>
-    </div>
-    <div>
-      <input type="checkbox" name="weather" id="wind.deg" value="wind.deg">
-      <label for="lat">風向</label>
-    </div>
-*/ 
